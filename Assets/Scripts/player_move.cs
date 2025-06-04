@@ -31,4 +31,9 @@ public class player_move : MonoBehaviour
     {
         Phoenix.Jump(rb);
     }
+
+    void OnCollisionEnter(Collision collision)
+{
+    Phoenix.CheckGround(collision);
+}
 }
